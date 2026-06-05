@@ -1,0 +1,25 @@
+.lista-curiosidades {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+.lista-curiosidades li::marker{
+    color: #b57cff;
+    font-weight: bold;
+}
+
+.item-curiosidad {
+    margin-bottom: 18px;
+    color: #cccccc;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.h2-curiosidades {
+    color: #b57cff;
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: center;
+    margin: 40px 0 25px;
+    text-decoration: underline;
+}

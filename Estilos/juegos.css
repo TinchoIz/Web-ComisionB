@@ -1,0 +1,35 @@
+.contenedor-juegos {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 60px auto;
+    justify-content: left;
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 15px;;
+}
+
+.imagen-juegos {
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    object-position:center ;
+    border-radius: 8px;
+    
+}
+
+.contenedor-texto-juegos {
+    max-width: 600px;
+}
+
+.h2-titulo-juegos {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff1a1a;
+}
+
+.texto-juegos {
+    color: #cccccc;
+    line-height: 1.5;
+}

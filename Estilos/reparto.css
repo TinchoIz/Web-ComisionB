@@ -1,0 +1,30 @@
+.contenedor-reparto {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding: 12px;
+}
+
+.imagen-reparto {
+    width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.nombre-actor {
+    font-size: 20px;
+    color: white;
+}
+
+.h2-titulo-reparto {
+    font-size: 22px;
+    color: #4da6ff;
+    ;
+}
+
+.section-reparto {
+    margin-bottom: 40px;
+}

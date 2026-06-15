@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Curiosidades</title>
+    <meta name="description"
+        content="Página de contacto de Star Wars Fan Page para enviar consultas, sugerencias o mensajes sobre el universo Star Wars.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../Recursos/Iconos/favicon-vader-pixel.ico">
+    <link rel="stylesheet" href="../Estilos/general.css">
+    <link rel="stylesheet" href="../Estilos/contacto.css">
+</head>
+
+<header class="header-principal">
+        <div class="contenedor-logo">
+            <img src="../Recursos/Imagenes/StarWars.png" alt="Star Wars">
+            <h1>Star Wars Fan Page</h1>
+        </div>
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./UniversoCinematografico.html">Universo Cinematográfico</a></li>
+                <li><a href="./Reparto.html">Reparto</a></li>
+                <li><a href="./DetrasEscena.html">Detrás de Escena</a></li>
+                <li><a href="./Curiosidades.html">Curiosidades</a></li>
+                <li><a href="./Juegos.html">Juegos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-introduccion-pagina">
+            <h1 class="titulo-introduccion-pagina">--------------- CONTACTO ---------------</h1>
+            <p class="texto-introduccion-pagina">
+               ¿Tenés alguna consulta, sugerencia o mensaje para compartir? Completá el formulario y enviá tu mensaje a esta galaxia muy, muy lejana.
+            </p>
+           
+        </section>
+
+         <section class="section-contacto">
+        <form action="./Confirmacion.html" method="get" class="formulario-contacto">
+
+            <div class="campo-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="40">
+            </div>
+
+            <div class="campo-formulario">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="40">
+            </div>
+
+            <div class="campo-formulario">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required minlength="10" maxlength="500"></textarea>
+            </div>
+
+            <button type="submit" class="boton-contacto">Enviar mensaje</button>
+
+        </form>
+    </section>
+
+
+
+
+
+
+
+    </main>
+
+        <footer class="footer-principal">
+
+        <section class="footer-h2-MasSobreStarWars">
+            <h2>Más sobre Star Wars:</h2>
+
+        </section>
+
+        <section class="footer-redes">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/starwarsla/">
+                        <img src="../Recursos/Iconos/Instagram.jpg" alt="Instagram" class="icon-redes">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/starwarsla/?brand_redir=211071682271746">
+                        <img src="../Recursos/Iconos/Facebook.jpg" alt="Facebook" class="icon-redes">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/StarWarsLA">
+                        <img src="../Recursos/Iconos/X.jpg" alt="X" class="icon-redes">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/starwars">
+                        <img src="../Recursos/Iconos/YouTube.jpg" alt="YouTube" class="icon-redes">
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+        <section>
+            <p class="footer-copy">© 2026 Star Wars Fan Page</p>
+        </section>
+
+    </footer>
+
+</html>

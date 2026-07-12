@@ -50,3 +50,20 @@
     color: #cccccc;
     ;
 }
+
+/* Vista movil */
+@media screen and (max-width: 677px) {
+
+    .contenedor-universo p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .lista-universo li {
+        font-size: 13px;
+        line-height: 1.45;
+    }
+     .container-article-home:last-child{
+        margin-bottom: 0;
+    }
+
+}

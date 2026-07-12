@@ -33,3 +33,32 @@
     color: #cccccc;
     line-height: 1.5;
 }
+
+/* Vista movil */
+
+@media screen and (max-width: 677px) {
+
+.contenedor-juegos {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 14px;
+        padding: 16px;
+        margin: 0 0 20px;
+    }
+
+    .contenedor-texto-juegos {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+    }
+
+    .h2-titulo-juegos {
+        font-size: 22px;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+}

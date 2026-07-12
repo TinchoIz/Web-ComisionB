@@ -31,3 +31,50 @@
     color: #cccccc;
     line-height: 1.5;
 }
+
+/* Vista movil */
+@media screen and (max-width: 677px) {
+
+.contenedor-detras {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 14px;
+        padding: 16px;
+        margin-bottom: 22px;
+    }
+
+    .contenedor-texto-detras {
+        display: contents;
+    }
+
+    .h2-titulo-detras {
+        order: 1;
+        font-size: 22px;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0;
+    }
+
+    .contenedor-imagen-detras {
+        order: 2;
+        width: 100%;
+    }
+
+    .imagen-detras {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    .texto-detras {
+        order: 3;
+        width: 100%;
+        font-size: 13px;
+        line-height: 1.55;
+        margin: 0 0 14px;
+    }
+}

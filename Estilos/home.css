@@ -1,7 +1,5 @@
 .imagen-articulo-home {
-    display: flex;
-    gap: 25px;
-    align-items: center;
+    grid-area: imagen;
     width: 400px;
     height: auto;
     object-fit: cover;
@@ -15,21 +13,32 @@
 .article-home {
     border: 1px solid #444;
     padding: 15px;
-    display: flex;
-    gap: 40px;
     border-radius: 8px;
+    display: grid;
+    grid-template-columns: 400px minmax(0, 1fr);
+    grid-template-areas:
+        "imagen titulo"
+        "imagen contenido";
+    column-gap: 40px;
+    align-items: start;
 }
 
-.contenido-article-home h3 {
+.titulo-articulo-home {
     color: #ffe81f;
-    margin-top: 0;
-    margin-bottom: 12px;
+    margin: 0 0 12px;
     font-size: 30px;
+}
+
+.contenido-article-home {
+    grid-area: contenido;
+    min-width: 0;
 }
 
 .contenido-article-home p {
     line-height: 1.5;
     font-size: 20px;
+    max-width: 800px;
+    margin: 0;
 }
 
 .section-presentacion-home {
@@ -59,8 +68,90 @@
 
 .titulo-seccion-home {
     color: #66ff00;
+    background-color: rgba(102, 255, 0, 0.07);
+    border: 1px solid #66ff00;
+    border-radius: 8px;
     font-size: 30px;
     text-align: center;
-    margin: 40px 0 25px;
-    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 30px auto 25px;
+    width: fit-content;
+    max-width: 100%;
+    padding: 10px 20px;
+}
+
+/* Vista movil */
+
+@media screen and (max-width: 677px) {
+
+    .section-presentacion-home {
+        transform: none;
+        padding: 0 8px;
+        margin-bottom: 24px;
+    }
+
+    .section-presentacion-home h2 {
+        font-size: 22px;
+        line-height: 1.3;
+        margin: 8px 0 6px;
+    }
+
+    .section-presentacion-home h3 {
+        font-size: 16px;
+        line-height: 1.3;
+        margin: 0 0 8px;
+    }
+
+    .section-presentacion-home p {
+        font-size: 13px;
+        line-height: 1.5;
+        max-width: 100%;
+        margin-top: 8px;
+    }
+
+    .titulo-seccion-home {
+        font-size: 22px;
+        letter-spacing: 2px;
+        padding: 8px 14px;
+        margin-bottom: 8px auto 18px;
+    }
+
+    .article-home {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "titulo"
+            "imagen"
+            "contenido";
+        gap: 14px;
+    }
+
+    .titulo-articulo-home {
+        font-size: 22px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .imagen-articulo-home {
+        width: 85%;
+        max-width: 310px;
+        margin: 0 auto;
+    }
+
+    .contenido-article-home {
+        text-align: left;
+        width: 100%;
+    }
+
+    .contenido-article-home p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0 0 12px;
+    }
+
+    .container-article-home:last-child {
+        margin-bottom: 0;
+    }
+
+
 }

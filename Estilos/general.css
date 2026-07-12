@@ -1,4 +1,18 @@
 /* --------Estilos generales---------  */
+
+*{
+    box-sizing: border-box;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+audio{
+    max-width: 100%;
+}
+
 body {
     background-color: black;
     color: white;
@@ -76,6 +90,7 @@ section {
     text-transform: uppercase;
     display: inline-block;
     transition: color o.3s, text-shadow 0.3s, trasnform 0.3s;
+    font-size: 22px;
 }
 
 .navegacion-principal a:hover {
@@ -123,18 +138,28 @@ section {
 
 .titulo-introduccion-pagina {
     color: #ffe81f;
+    background-color: rgba(255, 232, 31, 0.10);
+    border: 1px solid #ffe81f;
+    border-radius: 8px;
     font-size: 30px;
     text-align: center;
-    margin: 40px 0 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 30px auto 25px;
+    width: fit-content;
+    max-width: 100%;
+    padding: 10px 20px;  
+
 }
 
 .texto-introduccion-pagina {
     max-width: 1100px;
-    margin: 0 auto 20px;
-    line-height: 1.5;
+    margin: 0 auto 18px;
     font-size: 20px;
-    color: white;
+    line-height: 1.5;
+    text-align: center;
 }
+
 
 /* Seccion de Audio*/
 .section-audio-sitio {
@@ -143,7 +168,7 @@ section {
     right: 60px;
     z-index: 10;
 }
-.tajeta-audio {
+.tarjeta-audio {
     border:  1px solid #444;
     border-radius: 10px;
     padding: 14px;
@@ -156,7 +181,7 @@ section {
     text-transform: uppercase;
     text-align: center;
 }
-.tajeta-audio p {
+.tarjeta-audio p {
     color: #dddddd;
     font-size: 13px;
     line-height: 1.4;
@@ -165,4 +190,79 @@ section {
 }
 .reproductor-audio {
     width: 100%;
+}
+
+/* Vista movil */
+
+@media screen and (max-width: 677px) {
+    main{
+        padding: 0 16px 24px;
+    }
+
+    .header-principal{
+        padding: 15px 12px;
+        padding-top: 0;
+    }
+    .contenedor-logo h1{
+        white-space: normal;
+        font-size: 20px;
+    }
+    .navegacion-principal ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .navegacion-principal a{
+        font-size: 14px;
+        text-align: center;
+    }
+    .section-audio-sitio{
+        position: static;
+        width: calc(100% - 40px);
+        max-width: 320px;
+        margin: 20px auto;
+        margin-top: 12px auto 0;
+        margin-bottom: 0;
+    }
+    .tarjeta-audio{
+       padding: 8px 12px;
+    }
+    .tarjeta-audio h2 {
+    margin-bottom: 4px;
+    font-size: 14px;
+    }
+    .tarjeta-audio p {
+    margin-bottom: 6px;
+    font-size: 12px;
+    }
+    .reproductor-audio{
+        width: 100%;
+    }
+    .titulo-introduccion-pagina{
+        font-size: 22px;
+        letter-spacing: 2px;
+        padding: 8px 14px;
+        margin-bottom: 8px auto 18px;
+    }
+    .texto-introduccion-pagina{
+        font-size: 14px;
+        line-height: 1.50;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+   
+
+}
+
+/* Vista Tablet */
+@media screen and (min-width: 678px) and (max-width: 1024px) {
+
+
+
+
+
+
+
+
+    
 }

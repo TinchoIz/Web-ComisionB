@@ -2,11 +2,9 @@
     grid-area: imagen;
     width: 400px;
     height: auto;
-    object-fit: cover;
 }
 
-.container-article-home {
-    align-items: flex-start;
+.container-article-home {  
     margin-bottom: 30px;
 }
 
@@ -59,7 +57,7 @@
 }
 
 .section-presentacion-home p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1px;
     max-width: 800px;
     margin: 0 auto;
@@ -93,28 +91,24 @@
 
     .section-presentacion-home h2 {
         font-size: 22px;
-        line-height: 1.3;
         margin: 8px 0 6px;
     }
 
     .section-presentacion-home h3 {
         font-size: 16px;
-        line-height: 1.3;
         margin: 0 0 8px;
     }
 
     .section-presentacion-home p {
         font-size: 13px;
         line-height: 1.5;
-        max-width: 100%;
         margin-top: 8px;
     }
 
     .titulo-seccion-home {
         font-size: 22px;
-        letter-spacing: 2px;
         padding: 8px 14px;
-        margin-bottom: 8px auto 18px;
+        margin: 0 auto 18px;
     }
 
     .article-home {
@@ -138,39 +132,55 @@
         margin: 0 auto;
     }
 
-    .contenido-article-home {
-        text-align: left;
-        width: 100%;
-    }
-
     .contenido-article-home p {
         font-size: 14px;
         line-height: 1.5;
-        margin: 0 0 12px;
+        margin-bottom: 12px;
     }
-
-    .container-article-home:last-child {
-        margin-bottom: 0;
-    }
-
 
 }
 
 /* Vista Tablet */
 
-@media screen and (max-width: 677px) and (max-width: 1024px) {
+@media screen and (min-width: 678px) and (max-width: 1024px) {
 
     .section-presentacion-home {
         transform: none;
-        padding: 0 18px;
-        margin-bottom: 28px;
     }
 
-    .section-presentacion-home h2 {
-        font-size: 24px;
-        line-height: 1.3;
-        margin: 10px 0 6px;
+    .section-presentacion-home p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 8px;
     }
 
+    .titulo-seccion-home {
+        font-size: 28px;
+    }
 
+    .article-home {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "titulo"
+            "imagen"
+            "contenido";
+        gap: 16px;
+    }
+
+    .imagen-articulo-home {
+        width: 100%;
+    }
+
+    .titulo-articulo-home {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contenido-article-home p {
+        font-size: 18px;
+    }
+
+    .contenido-article-home a {
+        font-size: 18px;
+    }
 }

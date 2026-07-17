@@ -28,27 +28,33 @@
 
 @media screen and (max-width: 677px) {
 
-    .section-curiosidades {
-        width: 100%;
-    }
+    .h2-curiosidades {
+    font-size: 22px;
+    text-align: center;
+    margin: 24px 0 20px;
+}
+
+.lista-curiosidades {
+    max-width: none;
+    padding-left: 24px;
+}
+
+.item-curiosidad {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+}
+
+/* Vista Tablet */
+
+@media screen and (min-width: 678px) and (max-width: 1024px) {
 
     .h2-curiosidades {
-        font-size: 22px;
-        text-align: center;
-        margin: 24px 0 20px;
-    }
-
-    .lista-curiosidades {
-        width: 100%;
-        max-width: none;
-        padding-left: 24px;
+        font-size: 34px;
     }
 
     .item-curiosidad {
-        font-size: 14px;
-        line-height: 1.3;
-        text-align: left;
-        padding-left: 2px;
+        font-size: 18px;
     }
-
 }

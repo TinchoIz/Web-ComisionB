@@ -56,8 +56,35 @@
     }
 
     .h2-titulo-juegos {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.2;
+        margin: 0;
+    }
+
+}
+
+/* Vista Tablet */
+
+@media screen and (min-width: 678px) and (max-width: 1024px) {
+
+    .contenedor-juegos {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        padding: 18px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+    }
+
+    .contenedor-imagen-juegos {
+        flex: 0 0 240px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .h2-titulo-juegos {
+        font-size: 20px;
+        line-height: 1.25;
         margin: 0;
     }
 

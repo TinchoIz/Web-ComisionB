@@ -54,16 +54,38 @@
 /* Vista movil */
 @media screen and (max-width: 677px) {
 
+    .contenedor-universo {
+        padding: 16px;
+    }
+
+    .h2-titulo-section {
+        font-size: 22px;
+        line-height: 1.2;
+        margin: 0 0 18px;
+    }
+
     .contenedor-universo p {
         font-size: 14px;
         line-height: 1.5;
     }
+
     .lista-universo li {
         font-size: 13px;
         line-height: 1.45;
     }
-     .container-article-home:last-child{
-        margin-bottom: 0;
+
+}
+
+/* Vista Tablet */
+
+@media screen and (min-width: 678px) and (max-width: 1024px) {
+
+    .h2-titulo-section{
+        font-size: 30px;
+    }
+
+    .lista-universo h3 {
+        font-size: 18px;
     }
 
 }

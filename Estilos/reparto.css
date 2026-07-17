@@ -65,3 +65,34 @@
     }
 
 }
+
+/* Vista Tablet */
+
+@media screen and (min-width: 678px) and (max-width: 1024px) {
+
+    .contenedor-reparto {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 20px 8px;
+    }
+
+    .contenedor-imagen-reparto {
+        flex: 0 0 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagen-reparto {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .h2-titulo-reparto {
+        font-size: 19px;
+        line-height: 1.25;
+        margin: 0;
+    }
+}

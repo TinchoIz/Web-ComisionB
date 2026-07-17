@@ -195,74 +195,132 @@ section {
 /* Vista movil */
 
 @media screen and (max-width: 677px) {
-    main{
+
+    main {
         padding: 0 16px 24px;
     }
 
-    .header-principal{
-        padding: 15px 12px;
-        padding-top: 0;
+    .header-principal {
+        padding: 14px 14px 15px;
     }
-    .contenedor-logo h1{
+
+    .contenedor-logo h1 {
         white-space: normal;
         font-size: 20px;
     }
-    .navegacion-principal ul{
+
+    .navegacion-principal ul {
         flex-direction: column;
         align-items: center;
         gap: 12px;
     }
-    .navegacion-principal a{
+
+    .navegacion-principal a {
         font-size: 14px;
         text-align: center;
     }
-    .section-audio-sitio{
+
+    .section-audio-sitio {
         position: static;
-        width: calc(100% - 40px);
-        max-width: 320px;
-        margin: 20px auto;
-        margin-top: 12px auto 0;
-        margin-bottom: 0;
+        width: calc(100% - 60px);
+        max-width: 290px;
+        margin: 12px auto 26px;
     }
-    .tarjeta-audio{
-       padding: 8px 12px;
+
+    .tarjeta-audio {
+        padding: 8px 12px;
     }
+
     .tarjeta-audio h2 {
-    margin-bottom: 4px;
-    font-size: 14px;
+        font-size: 14px;
+        margin-bottom: 4px;
     }
+
     .tarjeta-audio p {
-    margin-bottom: 6px;
-    font-size: 12px;
+        font-size: 12px;
+        margin-bottom: 6px;
     }
-    .reproductor-audio{
-        width: 100%;
-    }
-    .titulo-introduccion-pagina{
+
+    .titulo-introduccion-pagina {
         font-size: 22px;
         letter-spacing: 2px;
         padding: 8px 14px;
-        margin-bottom: 8px auto 18px;
+        margin: 0 auto 18px;
     }
-    .texto-introduccion-pagina{
+
+    .texto-introduccion-pagina {
         font-size: 14px;
-        line-height: 1.50;
+        line-height: 1.5;
         text-align: center;
         margin-bottom: 14px;
     }
-   
-
 }
 
 /* Vista Tablet */
 @media screen and (min-width: 678px) and (max-width: 1024px) {
 
+    main {
+        padding: 24px 28px 36px;
+    }
 
+    .header-principal,
+    .footer-principal {
+        min-height: auto;
+    }
 
+    .header-principal {
+        padding: 18px 24px 22px;
+    }
 
+    .contenedor-logo img {
+        max-width: 160px;
+    }
 
+    .contenedor-logo h1 {
+        font-size: 22px;
+        margin: 8px 0 18px;
+    }
 
+    .navegacion-principal ul {
+        flex-wrap: wrap;
+        max-width: 650px;
+        gap: 22px 16px;
+        margin: 0 auto;
+    }
 
+    .navegacion-principal li {
+        flex: 0 1 30%;
+        text-align: center;
+    }
 
+    .navegacion-principal a {
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .section-audio-sitio {
+        position: static;
+        max-width: 420px;
+        margin: 20px auto 0;
+    }
+
+    .tarjeta-audio {
+        padding: 10px 14px;
+    }
+
+    .section-introduccion-pagina {
+        margin-bottom: 36px;
+    }
+
+    .titulo-introduccion-pagina {
+        font-size: 26px;
+        letter-spacing: 2px;
+        margin: 24px auto 18px;
+    }
+
+    .footer-h2-MasSobreStarWars h2 {
+        margin: 0 0 16px;
+    }
     
 }

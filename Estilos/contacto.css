@@ -1,28 +1,28 @@
 .section-contacto {
-    display: flex;
-    justify-content: center;
     margin-bottom: 50px;
 }
 
 .formulario-contacto {
     width: 100%;
     max-width: 700px;
-    border: 1px solid #444;
-    border-radius: 8px;
+    margin: 0 auto;
     padding: 30px;
     background-color: #111;
+    border: 1px solid #444;
+    border-radius: 8px;
 }
 
 .campo-formulario {
     display: flex;
     flex-direction: column;
+    gap: 8px;
     margin-bottom: 20px;
 }
 
 .campo-formulario label {
-    margin-bottom: 8px;
     color: #ffe81f;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .campo-formulario input,
@@ -32,7 +32,7 @@
     border-radius: 5px;
     background-color: #222;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -47,6 +47,7 @@
     display: block;
     margin: 25px auto 0;
     padding: 12px 28px;
+    font-size: 20px;
     border: 1px solid #ffe81f;
     border-radius: 6px;
     background-color: transparent;
@@ -59,4 +60,15 @@
 .boton-contacto:hover {
     background-color: #ffe81f;
     color: black;
+}
+
+
+/* Vista Tablet */
+
+@media screen and (min-width: 678px) and (max-width: 1024px) {
+
+    main {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
